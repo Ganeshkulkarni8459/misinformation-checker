@@ -1,8 +1,17 @@
-from app import create_app
+# from app import create_app
+
+# app = create_app()
+
+# if __name__ == '__main__':
+#     app.run(debug=True)
+import os
+from app import create_app  # Assuming you have a factory function in __init__.py
+
+# Create the instance folder dynamically if it doesn't exist
+if not os.path.exists("instance"):
+    os.makedirs("instance")
 
 app = create_app()
 
-if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 8000))  # Default to 8000 if no PORT is set
-    app.run(debug=True, host='0.0.0.0', port=port)
-
+if __name__ == "__main__":
+    app.run()
