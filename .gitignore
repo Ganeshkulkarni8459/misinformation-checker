@@ -1,0 +1,57 @@
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Virtual environment folder
+venv/
+env/
+.venv/
+ENV/
+
+# Flask-specific
+instance/
+*.db
+*.sqlite3
+*.log
+
+# Configuration files
+*.env
+*.ini
+*.json
+*.yaml
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# MacOS-specific files
+.DS_Store
+
+# Windows-specific files
+Thumbs.db
+
+# Coverage reports
+.coverage
+*.coveragerc
+
+# Distribution and packaging
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Gunicorn logs
+gunicorn.log
+
+# mypy type checking
+.mypy_cache/
+
+# Pylint reports
+pylint-report.txt
